@@ -1,7 +1,18 @@
 <h1>
   {{title}}
 </h1>
+
 <md-input-container>
-  <input mdInput placeholder="Favorite food" [(ngModel)]="title">
+  <input mdInput placeholder="Simple Input" [(ngModel)]="title">
 </md-input-container>
+
 <md-icon>home</md-icon>
+
+<button md-raised-button>I'm a button</button>
+
+<md-select placeholder="I'm a select" [(ngModel)]="selectedValue">
+  <md-option *ngFor="let item of [{value:'0', view:'zero'}, {value:'1', view:'one'}, {value:'2', view:'Two'}]"
+             [value]="item.value">
+    {{item.view}}
+  </md-option>
+</md-select>

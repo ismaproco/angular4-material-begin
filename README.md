@@ -1,4 +1,6 @@
-# AngularMaterialBeginU
+# Angular Material Begin
+
+Blog post: https://medium.com/@ismapro/first-steps-with-angular-cli-and-angular-material-5a90406e9a4
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 

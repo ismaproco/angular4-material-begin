@@ -2,17 +2,18 @@
   {{title}}
 </h1>
 
-<md-input-container>
-  <input mdInput placeholder="Simple Input" [(ngModel)]="title">
-</md-input-container>
+<mat-form-field>
+  <input matInput placeholder="Simple Input" [(ngModel)]="title">
+</mat-form-field>
 
-<md-icon>home</md-icon>
+<mat-icon>home</mat-icon>
 
-<button md-raised-button>I'm a button</button>
+<button mat-raised-button>I'm a button</button>
 
-<md-select placeholder="I'm a select" [(ngModel)]="selectedValue">
-  <md-option *ngFor="let item of [{value:'0', view:'zero'}, {value:'1', view:'one'}, {value:'2', view:'Two'}]"
-             [value]="item.value">
-    {{item.view}}
-  </md-option>
-</md-select>
+<mat-form-field>
+  <mat-select placeholder="I'm a select" [(ngModel)]="selectedValue">
+    <mat-option *ngFor="let item of items" [value]="item.value">
+      {{item.view}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
